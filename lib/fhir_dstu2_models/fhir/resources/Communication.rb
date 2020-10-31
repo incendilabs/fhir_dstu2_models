@@ -5,7 +5,7 @@ module FHIR
       include FHIR::DSTU2::Json
       include FHIR::DSTU2::Xml
 
-      SEARCH_PARAMS = ['category', 'encounter', 'identifier', 'medium', 'patient', 'received', 'recipient', 'request', 'sender', 'sent', 'status', 'subject', 'category', 'encounter', 'identifier', 'medium', 'patient', 'priority', 'recipient', 'requested', 'requester', 'sender', 'status', 'subject', 'time']
+      SEARCH_PARAMS = ['category', 'encounter', 'identifier', 'medium', 'patient', 'received', 'recipient', 'request', 'sender', 'sent', 'status', 'subject']
       METADATA = {
         'id' => {'type'=>'id', 'path'=>'Communication.id', 'min'=>0, 'max'=>1},
         'meta' => {'type'=>'Meta', 'path'=>'Communication.meta', 'min'=>0, 'max'=>1},

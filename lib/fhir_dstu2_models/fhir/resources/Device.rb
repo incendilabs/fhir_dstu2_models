@@ -5,7 +5,7 @@ module FHIR
       include FHIR::DSTU2::Json
       include FHIR::DSTU2::Xml
 
-      SEARCH_PARAMS = ['parent', 'source', 'type', 'category', 'identifier', 'parent', 'source', 'type', 'identifier', 'location', 'manufacturer', 'model', 'organization', 'patient', 'type', 'udi', 'url', 'device', 'patient', 'subject', 'device', 'patient', 'subject']
+      SEARCH_PARAMS = ['identifier', 'location', 'manufacturer', 'model', 'organization', 'patient', 'type', 'udi', 'url']
       METADATA = {
         'id' => {'type'=>'id', 'path'=>'Device.id', 'min'=>0, 'max'=>1},
         'meta' => {'type'=>'Meta', 'path'=>'Device.meta', 'min'=>0, 'max'=>1},

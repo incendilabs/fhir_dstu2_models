@@ -9,7 +9,7 @@ module FHIR
         'reason' => ['CodeableConcept', 'Reference'],
         'performed' => ['dateTime', 'Period']
       }
-      SEARCH_PARAMS = ['encounter', 'identifier', 'orderer', 'patient', 'performer', 'subject', 'code', 'date', 'encounter', 'identifier', 'location', 'patient', 'performer', 'subject']
+      SEARCH_PARAMS = ['code', 'date', 'encounter', 'identifier', 'location', 'patient', 'performer', 'subject']
       METADATA = {
         'id' => {'type'=>'id', 'path'=>'Procedure.id', 'min'=>0, 'max'=>1},
         'meta' => {'type'=>'Meta', 'path'=>'Procedure.meta', 'min'=>0, 'max'=>1},

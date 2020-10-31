@@ -8,7 +8,7 @@ module FHIR
       MULTIPLE_TYPES = {
         'reason' => ['CodeableConcept', 'Reference']
       }
-      SEARCH_PARAMS = ['code', 'date', 'fulfillment', 'identifier', 'request', 'who', 'date', 'detail', 'identifier', 'patient', 'source', 'subject', 'target', 'when', 'when_code', 'additive', 'datetime', 'encounter', 'formula', 'identifier', 'oraldiet', 'patient', 'provider', 'status', 'supplement', 'code', 'datewritten', 'encounter', 'identifier', 'medication', 'patient', 'prescriber', 'status', 'actor', 'bodysite', 'code', 'encounter', 'event-date', 'event-status', 'identifier', 'item-date', 'item-past-status', 'item-status', 'orderer', 'patient', 'specimen', 'status', 'subject']
+      SEARCH_PARAMS = ['date', 'detail', 'identifier', 'patient', 'source', 'subject', 'target', 'when', 'when_code']
       METADATA = {
         'id' => {'type'=>'id', 'path'=>'Order.id', 'min'=>0, 'max'=>1},
         'meta' => {'type'=>'Meta', 'path'=>'Order.meta', 'min'=>0, 'max'=>1},

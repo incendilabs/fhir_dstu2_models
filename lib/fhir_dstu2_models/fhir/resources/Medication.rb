@@ -5,7 +5,7 @@ module FHIR
       include FHIR::DSTU2::Json
       include FHIR::DSTU2::Xml
 
-      SEARCH_PARAMS = ['code', 'destination', 'dispenser', 'identifier', 'medication', 'patient', 'prescription', 'receiver', 'responsibleparty', 'status', 'type', 'whenhandedover', 'whenprepared', 'code', 'effectivedate', 'identifier', 'medication', 'patient', 'source', 'status', 'code', 'container', 'content', 'form', 'ingredient', 'manufacturer', 'code', 'device', 'effectivetime', 'encounter', 'identifier', 'medication', 'notgiven', 'patient', 'practitioner', 'prescription', 'status', 'code', 'datewritten', 'encounter', 'identifier', 'medication', 'patient', 'prescriber', 'status']
+      SEARCH_PARAMS = ['code', 'container', 'content', 'form', 'ingredient', 'manufacturer']
       METADATA = {
         'id' => {'type'=>'id', 'path'=>'Medication.id', 'min'=>0, 'max'=>1},
         'meta' => {'type'=>'Meta', 'path'=>'Medication.meta', 'min'=>0, 'max'=>1},

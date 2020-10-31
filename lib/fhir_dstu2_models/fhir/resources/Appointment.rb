@@ -5,7 +5,7 @@ module FHIR
       include FHIR::DSTU2::Json
       include FHIR::DSTU2::Xml
 
-      SEARCH_PARAMS = ['actor', 'date', 'identifier', 'location', 'part-status', 'patient', 'practitioner', 'status', 'actor', 'appointment', 'identifier', 'location', 'part-status', 'patient', 'practitioner']
+      SEARCH_PARAMS = ['actor', 'date', 'identifier', 'location', 'part-status', 'patient', 'practitioner', 'status', 'actor', 'identifier', 'location', 'part-status', 'patient', 'practitioner']
       METADATA = {
         'id' => {'type'=>'id', 'path'=>'Appointment.id', 'min'=>0, 'max'=>1},
         'meta' => {'type'=>'Meta', 'path'=>'Appointment.meta', 'min'=>0, 'max'=>1},
