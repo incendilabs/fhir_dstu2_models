@@ -37,7 +37,7 @@ module FHIR
           'period' => {'type'=>'decimal', 'path'=>'Repeat.period', 'min'=>0, 'max'=>1},
           'periodMax' => {'type'=>'decimal', 'path'=>'Repeat.periodMax', 'min'=>0, 'max'=>1},
           'periodUnits' => {'valid_codes'=>{'http://unitsofmeasure.org'=>['s', 'min', 'h', 'd', 'wk', 'mo', 'a']}, 'type'=>'code', 'path'=>'Repeat.periodUnits', 'min'=>0, 'max'=>1, 'binding'=>{'strength'=>'required', 'uri'=>'http://hl7.org/fhir/ValueSet/units-of-time'}},
-          'when' => {'valid_codes'=>{'http://hl7.org/fhir/v3/TimingEvent'=>['AC', 'ACD', 'ACM', 'ACV', 'C', 'CD', 'CM', 'CV', 'HS', 'IC', 'ICD', 'ICM', 'ICV', 'PC', 'PCD', 'PCM', 'PCV', 'WAKE']}, 'type'=>'code', 'path'=>'Repeat.when', 'min'=>0, 'max'=>1, 'binding'=>{'strength'=>'required', 'uri'=>'http://hl7.org/fhir/ValueSet/event-timing'}}
+          'when' => {'valid_codes'=>{'http://hl7.org/fhir/v3/TimingEvent'=>['AC', 'ACD', 'ACM', 'ACV', 'C', 'CD', 'CM', 'CV', 'HS', 'PC', 'PCD', 'PCM', 'PCV', 'WAKE']}, 'type'=>'code', 'path'=>'Repeat.when', 'min'=>0, 'max'=>1, 'binding'=>{'strength'=>'required', 'uri'=>'http://hl7.org/fhir/ValueSet/event-timing'}}
         }
 
         attr_accessor :id             # 0-1 id
